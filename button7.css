@@ -1,0 +1,71 @@
+.container-button7{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+  }
+  
+ nav li {
+    margin: 1em;
+    border-left: solid 1px #d4d4d4;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+
+  p{
+    color: transparent;
+    background-color: #262626;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 4px solid #262626;
+    padding: 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+p:before{
+    content: 'Hover Me';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color:#262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+p:after{
+    content: 'Hover Me';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color:#262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform: translate(-100%,100%)
+}
+
+p:hover:before{
+    transform: translate(100%,-100%)
+}
+
+p:hover:after{
+    transform: translate(0,0)
+}
