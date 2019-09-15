@@ -1,0 +1,75 @@
+.container-button10{
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+font-family: sans-serif;
+background-color: #212121;
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+  }
+  
+ nav li {
+    margin: 1em;
+    border-left: solid 1px #d4d4d4;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+
+  p{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  p:before{
+    content: 'button';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2ce771;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+  }
+
+  p:after{
+    content: 'button';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+  }
+
+  p:hover:before{
+    transform: rotateX(0deg);
+  }
+
+  p:hover:after{
+    transform: rotateX(0deg);
+  }
